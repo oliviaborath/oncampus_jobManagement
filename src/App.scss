@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+$min-contrast-ratio: 4;
+$theme-colors: (
+  'primary': #f20404,
+);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding-bottom: 50px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+}
+
+@import 'bootstrap';
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.btn {
+  padding: 8px 24px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.btn-gray {
+  border: 1px solid #a9a9a9;
+  color: #a9a9a9;
+
+  &:hover {
+    background: #a9a9a9;
+    color: #ffffff;
+  }
+}
+
+.spinner-border {
+  margin: auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  &.spinner-border-sm {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.default-form {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
+  &.three-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.form-group {
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input,
+  textarea,
+  select,
+  .rdw-editor-wrapper {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+  }
+  &.span {
+    grid-column: 1 / -1;
+  }
+  .days-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .hours-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.form-select {
+  box-shadow: none;
+  border-color: black;
+}
+
+.form-check {
+  display: flex;
+  gap: 5px;
+
+  .form-check-input:checked {
+    background-color: #f20404;
+    border-color: #f20404;
+  }
+  .form-check-input[type='checkbox'] {
+    padding: 10px;
+  }
+  .form-check-label {
+    display: block;
+    margin-top: 3px;
+  }
+}
+
+.btn-outline-primary {
+  border: 1px solid #f20404;
+}
+
+.pagination {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f20404;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #f20404;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      color: white;
+      background: #f20404;
+    }
+  }
+}
+
+.react-datepicker-wrapper {
+  flex: 1;
+}
+
+.react-datepicker__tab-loop {
+  .react-datepicker-popper {
+    z-index: 2;
+
+    .react-datepicker__navigation {
+      display: flex;
+    }
+  }
+}

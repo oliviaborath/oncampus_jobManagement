@@ -1,0 +1,66 @@
+.test {
+  margin: 200px auto;
+  max-width: 1080px;
+  button {
+    all: unset;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    color: #f20404;
+    border: 1px solid #f20404;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background: #f20404;
+      color: #ffffff;
+    }
+  }
+
+  .test-form {
+    padding: 0 50px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    h2 {
+      margin: 0 0 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 8px;
+    }
+    .register-link {
+      color: #f20404;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .inputs-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+    .form-control {
+      margin-top: 50px;
+      position: relative;
+      width: 100%;
+      label {
+        display: block;
+      }
+      input {
+        padding: 10px 10px 10px 30px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #000000;
+        &:focus {
+          border-bottom: 2px solid #f20404;
+        }
+      }
+    }
+    .actions {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}

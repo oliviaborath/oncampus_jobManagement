@@ -1,0 +1,61 @@
+.applications {
+  margin: 20px auto;
+  max-width: 1080px;
+
+  .title {
+    margin: 0;
+    padding: 20px 0;
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+    text-align: left;
+
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: initial;
+      flex: 1;
+
+      &.no {
+        flex: 0 10%;
+      }
+    }
+  }
+
+  .application {
+    display: flex;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+    position: relative;
+    color: black;
+    text-decoration: none;
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: initial;
+      flex: 1;
+
+      &.no {
+        flex: 0 10%;
+      }
+
+      &.pending {
+        color: orange;
+      }
+
+      &.rejected {
+        color: red;
+      }
+
+      &.approved {
+        color: green;
+      }
+
+      &.ongoing {
+        color: blue;
+      }
+    }
+  }
+}

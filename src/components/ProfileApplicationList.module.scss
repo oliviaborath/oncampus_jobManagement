@@ -1,0 +1,87 @@
+.applications {
+  margin: 20px auto;
+  max-width: 1080px;
+
+  .header {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
+    select {
+      width: 250px;
+    }
+  }
+
+  .application {
+    display: block;
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #efefef;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+
+    .title {
+      font-size: 30px;
+    }
+
+    .status {
+      margin: 8px 0;
+      padding: 5px 20px;
+      width: fit-content;
+      border-radius: 20px;
+      color: white;
+
+      &.pending {
+        background: orange;
+      }
+
+      &.rejected {
+        background: red;
+      }
+
+      &.approved {
+        background: green;
+      }
+
+      &.ongoing {
+        background: blue;
+      }
+    }
+
+    .period {
+      margin-bottom: 8px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .details {
+      margin-top: 20px;
+      display: flex;
+      padding: 20px 30px;
+      background: #d9d9d9;
+      border-radius: 15px;
+
+      .item {
+        padding: 0 10px;
+        flex: 1;
+        text-align: center;
+
+        &:not(:last-child) {
+          border-right: 1px solid black;
+        }
+
+        .type {
+          margin-bottom: 20px;
+        }
+
+        .content {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.job-filter {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  .dropdown {
+    flex-basis: 25%;
+    div {
+      width: 100%;
+    }
+    button {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

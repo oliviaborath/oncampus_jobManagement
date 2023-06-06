@@ -1,0 +1,38 @@
+.job-form {
+  margin: 50px auto;
+  h1 {
+    text-align: center;
+    margin: 0 0 16px;
+  }
+  .form-action {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: fit-content;
+    margin: auto;
+    button {
+      display: block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 21px;
+      background: none;
+    }
+    .save {
+      border: 1px solid #f20404;
+      color: #f20404;
+      &:hover {
+        background: #f20404;
+        color: #ffffff;
+      }
+    }
+    .cancel {
+      border: 1px solid #a9a9a9;
+      color: #a9a9a9;
+      &:hover {
+        background: #a9a9a9;
+        color: #ffffff;
+      }
+    }
+  }
+}

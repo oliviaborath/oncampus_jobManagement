@@ -1,0 +1,44 @@
+.jobs {
+  .search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    input {
+      padding: 10px 15px;
+      max-width: 100%;
+      width: 400px;
+      border-radius: 10px;
+    }
+  }
+  .title {
+    margin: 0;
+    padding: 20px 0;
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+    text-align: left;
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: initial;
+      flex-basis: 25%;
+    }
+  }
+  .job {
+    display: flex;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: initial;
+      flex-basis: 25%;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.job-list {
+  margin: auto;
+  padding: 15px;
+  max-width: 1300px;
+  button {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .add {
+    margin: 50px auto;
+    padding: 15px 30px;
+    background: #f20404;
+    color: #ffffff;
+    border: 1px solid #f20404;
+  }
+  .edit {
+    border: 1px solid #f20404;
+    color: #f20404;
+    &:hover {
+      background: #f20404;
+      color: #ffffff;
+    }
+  }
+  .delete {
+    border: 1px solid #a9a9a9;
+    color: #a9a9a9;
+    &:hover {
+      background: #a9a9a9;
+      color: #ffffff;
+    }
+  }
+  .title {
+    margin: 180px auto 100px;
+    max-width: 600px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 82px;
+    text-align: center;
+  }
+  .jobs {
+    .title {
+      margin: 0;
+      padding: 20px 0;
+      max-width: 100%;
+      display: flex;
+      gap: 24px;
+      text-align: left;
+      p {
+        margin: 0;
+        font-size: 20px;
+        line-height: initial;
+        flex-basis: 25%;
+      }
+    }
+    .job {
+      display: flex;
+      gap: 24px;
+      padding: 20px 0;
+      border-bottom: 1px solid black;
+      p {
+        margin: 0;
+        font-size: 18px;
+        line-height: initial;
+        flex-basis: 25%;
+      }
+    }
+  }
+  .card {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: relative;
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .status {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    .header {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      .header-image {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .header-text {
+        h3 {
+          margin-bottom: 8px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+    }
+    .job-title {
+      margin-bottom: 15px;
+      font-size: 25px;
+      line-height: 29px;
+    }
+    .deadline {
+      margin-bottom: 20px;
+    }
+    .description {
+      color: #585858;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.signin {
+  margin: auto;
+  max-width: 1080px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  .images {
+    width: 60%;
+    img {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .signin-form {
+    width: 40%;
+    padding: 0 50px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    h2 {
+      margin: 0 0 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 8px;
+    }
+    .register-link {
+      color: #f20404;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .form-control {
+      margin-top: 50px;
+      position: relative;
+      width: 100%;
+      label {
+        display: block;
+      }
+      input {
+        padding: 10px 10px 10px 30px;
+        width: calc(100% - 50px);
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #000000;
+        &:focus {
+          border-bottom: 2px solid #f20404;
+        }
+      }
+      &.email {
+        &::after {
+          content: url('../assets/icons/mail.svg');
+          position: absolute;
+          left: 0;
+          top: 50%;
+        }
+      }
+      &.password {
+        &::before {
+          content: url('../assets/icons/lock.svg');
+          position: absolute;
+          left: 0;
+          top: 50%;
+        }
+      }
+    }
+    .checkbox {
+      margin-top: 20px;
+      display: inline-block;
+      label {
+        margin-left: 10px;
+      }
+    }
+    .forgot-password {
+      margin-top: 20px;
+      float: right;
+    }
+    .login {
+      margin-top: 60px;
+      width: 100%;
+      background: #f20404;
+      padding: 14px 0;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+      color: #ffffff;
+      border: none;
+      border-radius: 32px;
+      text-align: center;
+    }
+    .continue {
+      margin: 40px 0 30px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #b5b5b5;
+      text-align: center;
+    }
+    .google {
+      display: block;
+      margin: auto;
+    }
+  }
+}

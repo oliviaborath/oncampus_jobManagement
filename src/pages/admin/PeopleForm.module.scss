@@ -1,0 +1,125 @@
+.add-item {
+  margin: auto;
+  padding: 20px;
+  max-width: 1080px;
+
+  .types {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    outline: 1px solid #f20404;
+    border-radius: 10px;
+    position: relative;
+
+    button {
+      width: 110px;
+      padding: 10px 20px;
+      color: #f20404;
+      background: transparent;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background: transparent;
+        color: #f20404;
+      }
+
+      &.active {
+        background: transparent;
+        color: #ffffff;
+      }
+    }
+
+    .slider {
+      width: 110px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background: #f20404;
+      border-radius: 10px;
+      z-index: -1;
+      transition: all 0.2s;
+
+      &.right {
+        transform: translateX(110px);
+      }
+    }
+  }
+
+  form {
+    margin: 25px 0;
+    padding: 30px 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 25px;
+    background: #ffffff;
+
+    .register-link {
+      color: #f20404;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .inputs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 50px;
+    }
+    .form-control {
+      margin-top: 50px;
+      position: relative;
+      width: 100%;
+
+      label {
+        display: block;
+      }
+
+      input {
+        padding: 10px 10px 10px 30px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #000000;
+
+        &:focus {
+          border-bottom: 2px solid #f20404;
+        }
+      }
+    }
+    .actions {
+      margin: 50px auto;
+      width: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      button {
+        width: 110px;
+        padding: 10px 20px;
+        color: #f20404;
+        background: transparent;
+        border: 1px solid #f20404;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background: #f20404;
+          color: #ffffff;
+          transition: all 0.2s;
+        }
+      }
+
+      .close {
+        border: 1px solid #a9a9a9;
+        color: #a9a9a9;
+
+        &:hover {
+          background: #a9a9a9;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
